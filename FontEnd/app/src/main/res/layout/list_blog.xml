@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_margin="5dp"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_blog">
+
+
+        <ImageView
+            android:id="@+id/image_blog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/person_500px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:maxLines="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Tiêu đề"
+            android:textColor="#000"
+            android:paddingEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_toRightOf="@+id/image_blog"
+            android:layout_toEndOf="@id/image_blog"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_blog"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="-80dp"
+            android:layout_marginRight="4dp"
+            android:layout_toEndOf="@id/image_blog"
+            android:layout_toRightOf="@+id/image_blog"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="3"
+            android:padding="2dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:text="Nội dung"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

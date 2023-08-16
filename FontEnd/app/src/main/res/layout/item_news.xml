@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:layout_margin="5dp"
+    android:focusable="true"
+    app:cardCornerRadius="12dp"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item">
+
+        <ImageView
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image_Class"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/icn6"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_Class"
+            android:maxLines="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:textColor="#000"
+            android:paddingEnd="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_toRightOf="@+id/image_Class"
+            android:layout_toEndOf="@id/image_Class"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/infor_class"
+            android:maxLines="3"
+            android:layout_marginTop="5dp"
+            android:text="Description"
+            android:textColor="#000"
+            android:paddingEnd="10dp"
+            android:textSize="14sp"
+            android:padding="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginStart="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_toRightOf="@+id/image_Class"
+            android:layout_below="@+id/name_Class"
+            android:layout_toEndOf="@id/image_Class"
+            android:paddingRight="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infor_class"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/image_Class">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info_date"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Date"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_source"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Source"
+                android:layout_toEndOf="@id/info_date"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@id/info_date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/news_view"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="100 views"
+                android:paddingRight="5dp"
+                android:layout_toRightOf="@id/news_source" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            tools:context=".students.authentication.LoginActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+        <ImageView
+                android:layout_width="146dp"
+                android:layout_height="158dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/mylogo"
+                android:transitionName="logo_image"/>
+
+        <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/arima_madurai"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:textSize="24dp"
+                android:text="Welcome to MyTech"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Email"
+                app:helperTextTextColor="#F44336"
+                app:hintTextColor="#FA8072"
+                app:boxStrokeColor="#FA8072"
+                app:endIconMode="clear_text">
+
+            <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_marginTop="30dp"
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Password"
+                app:helperTextTextColor="#F44336"
+                app:hintTextColor="#FA8072"
+                app:boxStrokeColor="#FA8072"
+
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="100dp"
+                android:text="Sign In"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:background="@drawable/custom_button"/>
+        <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="10dp"
+                android:text="Forgot Pasword ?"
+                android:textColor="@color/black"
+                android:textSize="16dp"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="#a6dfdfdf"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="Already a member? "
+                    android:textSize="16dp"/>
+
+            <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="74dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="@string/Dangki"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
